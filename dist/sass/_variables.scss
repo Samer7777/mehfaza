@@ -1,0 +1,29 @@
+$hover-color: #39b9ef;
+$btn-color: #56b847;
+$white-color: #f9fafe;
+$text-main-color: #2ebaee;
+$text-hover-color: #0356a4;
+$black-primaty-text: #343434;
+$black-light-text: #444444;
+$news-color: #7c99d6;
+$boxShadow: 1px 3px 13px rgba(0, 0, 0, 0.2);
+$transition: 0.4s;
+
+a {
+  text-decoration: none;
+  color: unset;
+  &:hover {
+    color: inherit;
+  }
+}
+
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.btn:focus {
+  box-shadow: none;
+  border: none;
+}
