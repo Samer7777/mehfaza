@@ -737,6 +737,20 @@ body {
   .news .news_container .carousel-item .text_content {
     padding: 20px;
   }
+  .from-down {
+    -webkit-transform: translateY(10%);
+    transform: translateY(10%);
+  }
+  .ticker_icon {
+    margin-top: 10px;
+  }
+  .trade,
+  .platform,
+  .news,
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 @media (max-width: 467px) {
   .header {
@@ -792,9 +806,6 @@ body {
   }
   .footer .copy_right {
     flex-direction: column;
-  }
-  .footer {
-    padding-block: 20px;
   }
 }
 /*****************************end responsive************************************/
