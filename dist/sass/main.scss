@@ -690,3 +690,111 @@ body {
   }
 }
 /******animation************/
+
+/*****************************start responsive************************************/
+@media (max-width: 1024px) {
+  .stockmark_small_container .stockmark_content .stockmark_info,
+  .stockmark_small_container .stockmark_content .stockmark_info,
+  .ticker_icon {
+    justify-content: center;
+  }
+}
+@media (max-width: 991px) {
+  .market_table_container .indices_acticve_header h2 {
+    font-size: 20px;
+  }
+  .market_table_container .active_header {
+    .form-control-sm {
+      font-size: 12px;
+    }
+    select {
+      height: 24px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .research_report
+    .content
+    .research_report_links
+    .col-md-4.text-center::before {
+    width: 0;
+  }
+  .market_table_container .indices_header,
+  .market_table_container .active_header {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  .news
+    .news_container
+    .carousel-item
+    .text_content
+    .news_links
+    .new_links_item
+    .inside_list {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 40px;
+  }
+  .news .news_container .carousel-item .text_content {
+    padding: 20px;
+  }
+}
+@media (max-width: 467px) {
+  .header {
+    padding-block: 10px;
+  }
+  .logo_container img {
+    max-width: 130px;
+  }
+  .header .top_header .sign-log_container .btn {
+    padding: 6px 10px;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .home .home_text_container .home_text h1 {
+    font-size: 40px;
+  }
+  .home .home_text_container .home_text h3 {
+    font-size: 20px;
+  }
+  .home .home_text_container .home_search .submit_btn {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .news .news_container .carousel-indicators {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+@media (max-width: 400px) {
+  .market_table_container .stock_mark_table_body .body_list,
+  .market_table_container .stock_mark_table_header .header_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    text-align: center;
+  }
+  .header .top_header .sign-log_container .btn {
+    font-size: 13px;
+  }
+  .mobile_padding {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .market_table_container
+    .stock_mark_table_body
+    .body_list
+    .body_list_item
+    .arrow {
+    margin-left: 0;
+  }
+  .news .news_container .carousel-item .text_content h2 {
+    font-size: 24px;
+  }
+  .footer .copy_right {
+    flex-direction: column;
+  }
+  .footer {
+    padding-block: 20px;
+  }
+}
+/*****************************end responsive************************************/
