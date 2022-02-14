@@ -61,8 +61,11 @@
                   aria-controls="navbarNav"
                   aria-expanded="false"
                   aria-label="Toggle navigation"
+                  id="my_btn"
                 >
-                  <span class="navbar-toggler-icon"></span>
+                  <div class="menu-btn">
+                    <div class="menu-btn__burger"></div>
+                  </div>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav mx-auto">
@@ -1292,7 +1295,7 @@
     <section class="news">
       <div class="container">
         <div class="row fade-in">
-          <div class="col-4 d-none d-lg-block news_img_container pr-lg-0">
+          <div class="col-4 news_img_container pr-lg-0">
             <div class="">
               <img
                 src="./dist/images/images/Laptop.png"
@@ -1578,6 +1581,13 @@
 
     <!--my js-->
     <script src="./dist/js/custom.js"></script>
+
+    <script>
+      $("#my_btn").click(function () {
+        $(".header").toggleClass("dark_header");
+        $(".menu-btn").toggleClass("open");
+      });
+    </script>
 
     <!--======= = = js all js = = ============-->
   </body>
