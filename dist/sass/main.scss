@@ -504,51 +504,9 @@ body {
       bottom: auto;
       margin-left: 26px;
       margin-right: 40px;
-      li {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background-color: $text-hover-color;
-      }
     }
     .carousel-item {
       min-height: 300px;
-      .text_content {
-        display: inline-block;
-        padding: 6px 0 6px 50px;
-        color: $news-color;
-        h2 {
-          margin-bottom: 30px;
-          font-size: 35px;
-          font-weight: bold;
-        }
-        .news_links {
-          .new_links_item {
-            margin-bottom: 20px;
-            .inside_list {
-              display: grid;
-              grid-template-columns: repeat(3, 1fr);
-              gap: 20px;
-
-              .inside_list_item {
-                p {
-                  font-size: 14px;
-                  font-weight: bold;
-                  margin-bottom: 5px;
-                }
-                a {
-                  font-size: 12px;
-                  transition: $transition;
-                  &:hover {
-                    color: $text-hover-color;
-                    text-decoration: none;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
     }
     .more_btn {
       .btn {
@@ -557,6 +515,10 @@ body {
         border-radius: 24px;
         font-size: 14px;
         padding: 10px 25px;
+        transition: $transition;
+        &:hover {
+          background-color: $text-hover-color;
+        }
       }
     }
   }
@@ -577,6 +539,60 @@ body {
       margin: -4px;
       display: block;
     }
+  }
+  .text_content {
+    display: inline-block;
+    padding: 20px 0 15px 50px;
+    color: $news-color;
+    h2 {
+      margin-bottom: 30px;
+      font-size: 35px;
+      font-weight: bold;
+    }
+    .news_links {
+      .new_links_item {
+        margin-bottom: 20px;
+        .inside_list {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 20px;
+
+          .inside_list_item {
+            p {
+              font-size: 14px;
+              font-weight: bold;
+              margin-bottom: 5px;
+            }
+            a {
+              font-size: 12px;
+              transition: $transition;
+              &:hover {
+                color: $text-hover-color;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .lSPager.lSpg {
+    position: absolute;
+    top: 15px;
+    right: 40px;
+  }
+  .lSSlideOuter .lSPager.lSpg > li a {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #6d99ff;
+  }
+  .lSSlideOuter .lSPager.lSpg > li.active a,
+  .lSSlideOuter .lSPager.lSpg > li:hover a {
+    background-color: $text-hover-color;
+  }
+  .lSSlideOuter .lSPager.lSpg > li {
+    padding: 0 3px;
   }
 }
 /*************************end news style******************************/
