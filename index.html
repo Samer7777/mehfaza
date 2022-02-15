@@ -264,7 +264,7 @@
           </div>
           <div class="col-xl-9 px-0">
             <div class="stock_mark_line">
-              <ul class="stock_mark_list">
+              <ul class="stock_mark_list" id="small_status_bar">
                 <li class="stock_mark_item green">
                   <a href="#" class="stock_mark_link">AAFI</a>
                   <span>0.43%</span>
@@ -348,42 +348,22 @@
           </div>
           <div class="col-xl-1 pl-1 pr-0">
             <div class="ticker_icon col-xl-4 px-0">
-              <button
-                class="btn-xs"
-                id="tik-chaneg_dir"
-                onclick="ticker_chaneg_dir();return 0;"
-                title="Change direction"
-              >
+              <button class="btn-xs" id="onclickLeft" title="Change direction">
                 <span class="glyphicon glyphicon-menu-left">
                   <i class="fa-solid fa-angle-left"></i>
                 </span>
               </button>
-              <button
-                class="btn-xs"
-                id="tik-speed_up"
-                onclick="ticker_speed_up();return 0;"
-                title="Speed up"
-              >
+              <button class="btn-xs" id="onclickSpeed" title="Speed up">
                 <span class="glyphicon glyphicon-plus">
                   <i class="fa-solid fa-plus"></i>
                 </span>
               </button>
-              <button
-                class="btn-xs"
-                id="tik-speed_down"
-                onclick="ticker_speed_down();return 0;"
-                title="Speed down"
-              >
+              <button class="btn-xs" id="onclickSlow" title="Speed down">
                 <span class="glyphicon glyphicon-minus">
                   <i class="fa-solid fa-minus"></i>
                 </span>
               </button>
-              <button
-                class="btn-xs"
-                id="tik-chaneg_dir"
-                onclick="ticker_chaneg_dir2();return 0;"
-                title="Change direction"
-              >
+              <button class="btn-xs" id="onclickRight" title="Change direction">
                 <span class="glyphicon glyphicon-menu-right">
                   <i class="fa-solid fa-angle-right"></i>
                 </span>
@@ -1590,6 +1570,29 @@
           speed: 1000,
           loop: true,
         });
+      });
+    </script>
+
+    <!--stock mark status bar buttons-->
+    <script>
+      //speed Up Click
+      $("#onclickSpeed").click(function () {
+        $("#small_status_bar").css("animation-duration", "10s");
+      });
+
+      //speed Slow Click
+      $("#onclickSlow").click(function () {
+        $("#small_status_bar").css("animation-duration", "20s");
+      });
+
+      //left direction Click
+      $("#onclickLeft").click(function () {
+        $("#small_status_bar").css("direction", "ltr");
+      });
+
+      //Right direction Click
+      $("#onclickRight").click(function () {
+        $("#small_status_bar").css("direction", "rtl");
       });
     </script>
 
