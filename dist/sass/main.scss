@@ -333,6 +333,10 @@ body {
         min-width: 70px;
         a {
           text-decoration: underline;
+          transition: $transition;
+          &:hover {
+            color: $text-hover-color;
+          }
         }
 
         .arrow {
