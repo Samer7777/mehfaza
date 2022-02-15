@@ -619,7 +619,11 @@ body {
     .footer_social_icons {
       a {
         transition: $transition;
+        img {
+          transition: $transition;
+        }
         &:hover {
+          text-decoration: none;
           img {
             text-decoration: none;
             transform: scale(1.2);
