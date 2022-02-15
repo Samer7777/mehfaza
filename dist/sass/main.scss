@@ -351,7 +351,8 @@ body {
 
 /*************************start trade style******************************/
 .trade {
-  padding-block: 70px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 .trade .trade_heading h2 {
   font-weight: bold;
@@ -460,7 +461,8 @@ body {
 
 /*************************start platform style******************************/
 .platform {
-  padding-block: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: url("../images/images/Bg-platform.jpg");
   background-position: center;
   background-size: cover;
@@ -496,7 +498,8 @@ body {
 
 /*************************start news style******************************/
 .news {
-  padding-block: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   .news_container {
     box-shadow: 1px 2px 21px rgba(0, 88, 255, 0.2);
     padding-block: 30px;
@@ -604,7 +607,8 @@ body {
 /*************************start footer style******************************/
 .footer {
   background-color: #015184;
-  padding-block: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   .footer_wedgit {
     padding: 10px 0;
     a {
