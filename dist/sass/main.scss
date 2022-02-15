@@ -819,6 +819,18 @@ body {
   }
 }
 @media (max-width: 767px) {
+  .menu-btn__burger::after {
+    transform: translateY(10px);
+  }
+  .menu-btn__burger::before {
+    transform: translateY(-10px);
+  }
+  .menu-btn__burger,
+  .menu-btn__burger::before,
+  .menu-btn__burger::after {
+    width: 30px;
+    height: 3px;
+  }
   .news .news_container {
     padding-top: 20px;
     padding-bottom: 20px;
