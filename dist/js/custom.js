@@ -52,15 +52,18 @@ sliders.forEach((slider) => {
   appearOnScroll.observe(slider);
 });
 
-// burger menu
-// const menuBtn = document.querySelector(".menu-btn");
-// let menuOpen = false;
-// menuBtn.addEventListener("click", () => {
-//   if (!menuOpen) {
-//     menuBtn.classList.add("open");
-//     menuOpen = true;
-//   } else {
-//     menuBtn.classList.remove("open");
-//     menuOpen = false;
-//   }
-// });
+// go up btn
+var btn = $("#go_up_btn");
+
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass("show");
+  } else {
+    btn.removeClass("show");
+  }
+});
+
+btn.on("click", function (e) {
+  e.preventDefault();
+  $("html, body").animate({ scrollTop: 0 }, "300");
+});
