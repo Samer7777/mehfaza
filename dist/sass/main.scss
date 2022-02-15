@@ -737,6 +737,57 @@ body {
 }
 /******animation************/
 
+/* start Styles for the go up button */
+#go_up_btn {
+  display: inline-block;
+
+  background: -webkit-gradient(
+    linear,
+    top top,
+    top top,
+    from(#0356a4),
+    to(#2ebaee)
+  );
+  background: linear-gradient(to top, #0356a4, #2ebaee);
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#go_up_btn::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 40px;
+  color: #fff;
+  transition: $transition;
+}
+#go_up_btn:hover {
+  cursor: pointer;
+  text-decoration: none;
+  &::after {
+    font-size: 24px;
+  }
+}
+#go_up_btn:active {
+  background-color: $black-light-text;
+}
+#go_up_btn.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* end Styles for the go up button */
+
 /*****************************start responsive************************************/
 @media (max-width: 1024px) {
   .stockmark_small_container .stockmark_content .stockmark_info,
